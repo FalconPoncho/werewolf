@@ -4,4 +4,7 @@ execute as @a[team=Werewolf] run playsound minecraft:entity.armadillo.hurt ambie
 # Slightly shrink
 execute as @a[team=Werewolf] run attribute @s minecraft:generic.scale base set 1.16
 
+# Allow inventory to contain items again
+schedule clear logic:clear_loop
+
 schedule function werewolf:turn_humans3 5s append
