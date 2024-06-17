@@ -1,3 +1,5 @@
+### The Brute ###
+
 # Armor Variant 3
 item replace entity @s armor.head with minecraft:leather_helmet[dyed_color={rgb:11546150}]
 item replace entity @s armor.chest with minecraft:iron_chestplate

@@ -1,3 +1,5 @@
+### The Man-at-Arms ###
+
 # Armor Variant 1
 item replace entity @s armor.head with minecraft:iron_helmet
 item replace entity @s armor.chest with minecraft:leather_chestplate[dyed_color={rgb:11546150}]
