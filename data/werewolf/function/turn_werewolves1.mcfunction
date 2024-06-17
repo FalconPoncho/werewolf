@@ -5,5 +5,6 @@ execute as @a[team=Werewolf] run playsound minecraft:entity.wolf.whine ambient @
 execute as @a[team=Werewolf] run attribute @s minecraft:generic.scale base set 1.16
 
 # Clear inventory
+clear @a[team=Werewolf]
 
 schedule function werewolf:turn_werewolves2 5s append

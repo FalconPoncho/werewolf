@@ -9,11 +9,11 @@ execute as @a[nbt={SelectedItem: {id: "minecraft:compass"}}] run item replace en
 # If a hunter dies, put them in spectator
 execute as @a[team=Hunter] if score @s deaths matches 1.. run gamemode spectator
 
+# Repeat
+schedule function logic:loop 10t append
+
 # If all werewolves die, end game
 execute unless entity @a[team=Werewolf, scores={deaths=0}] run function logic:win_hunters
 
 # If all hunters die, end game
 execute unless entity @a[team=Hunter, scores={deaths=0}] run function logic:win_werewolves
-
-# Repeat
-schedule function logic:loop 10t append
