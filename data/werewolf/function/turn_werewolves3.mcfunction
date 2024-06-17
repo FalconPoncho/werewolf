@@ -24,3 +24,5 @@ effect give @a[team=Hunter] minecraft:glowing infinite 0 true
 title @a[team=Hunter] times 20 120 20
 title @a[team=Hunter] subtitle {"text":"Beware the werewolf..."}
 title @a[team=Hunter] title {"text":"Dusk","color":"red"}
+execute as @a[team=Hunter] at @s run playsound minecraft:entity.zombie_villager.converted ambient @s ~ ~ ~ 1 1 1
+execute as @a[team=Hunter] at @s run playsound minecraft:music.dragon music @s ~ ~ ~ 0.5 1 1
