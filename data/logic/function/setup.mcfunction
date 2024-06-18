@@ -3,6 +3,11 @@ gamerule doImmediateRespawn true
 gamerule doDaylightCycle false
 time set 0
 setworldspawn 0 50 0
+worldborder set 2000
+gamemode survival @a
+effect clear @a
+execute as @a run attribute @s minecraft:generic.scale base set 1.0
+execute as @a run attribute @s minecraft:generic.step_height base set 0.6
 
 # Set up hunter compasses
 data modify storage position Item set value {Slot:0b,components:{"minecraft:lodestone_tracker":{target:{dimension:"minecraft:overworld",pos:[I;0,0,0]},tracked:0b}},count:1,id:"minecraft:compass"}
