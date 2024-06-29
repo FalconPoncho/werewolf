@@ -3,7 +3,6 @@ scoreboard players set @a deaths 0
 
 # Give hunters gear
 function hunter:assign_variants
-execute as @a[team=Hunter] run function hunter:get_gear
 
 # Heal and saturate all players
 effect give @a minecraft:regeneration 2 10 true
