@@ -1,5 +1,5 @@
 # Play wolf pain sounds for every player
-execute as @a[team=Werewolf] run playsound minecraft:entity.wolf.whine ambient @a ~ ~ ~ 0.5
+execute as @a[team=Werewolf] at @s run playsound minecraft:entity.wolf.whine ambient @a ~ ~ ~ 0.5
 
 # Give temporary transformation effects
 effect give @a[team=Werewolf] minecraft:darkness 15 0 true

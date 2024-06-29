@@ -1,5 +1,5 @@
 # Play wolf howl sounds for every player
-execute as @a[team=Werewolf] run playsound minecraft:entity.wolf.howl ambient @a ~ ~ ~ 4 1 0.125
+execute as @a[team=Werewolf] at @s run playsound minecraft:entity.wolf.howl ambient @a ~ ~ ~ 4 1 0.125
 
 # Slightly embiggen
 execute as @a[team=Werewolf] run attribute @s minecraft:generic.scale base set 1.5

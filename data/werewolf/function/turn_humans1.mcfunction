@@ -1,5 +1,5 @@
 # Play wolf dying sounds for every player
-execute as @a[team=Werewolf] run playsound minecraft:entity.wolf.death ambient @a ~ ~ ~
+execute as @a[team=Werewolf] at @s run playsound minecraft:entity.wolf.death ambient @a ~ ~ ~
 
 # Slightly shrink
 execute as @a[team=Werewolf] run attribute @s minecraft:generic.scale base set 1.33
