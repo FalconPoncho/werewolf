@@ -10,6 +10,9 @@ effect give @a[team=Werewolf] minecraft:haste 15 3 true
 effect clear @a[team=Werewolf] minecraft:jump_boost
 effect give @a[team=Werewolf] minecraft:jump_boost 15 0 true
 
+# Remove the hunter scent tracker
+schedule clear werewolf:scent_loop
+
 # Write text about transformation
 title @a[team=Werewolf] times 20 120 20
 title @a[team=Werewolf] subtitle {"text":"You feel your lupine powers fading..."}

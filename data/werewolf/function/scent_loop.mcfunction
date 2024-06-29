@@ -1,0 +1,2 @@
+execute as @a[team=Werewolf, scores={deaths=0}] at @s anchored eyes facing entity @p[team=Hunter, scores={deaths=0}] eyes run particle minecraft:dust{color:[1.0, 0.0, 0.0], scale:2.0} ^ ^ ^6 2.0 1 2.0 1 1 normal @s
+schedule function werewolf:scent_loop 1s append

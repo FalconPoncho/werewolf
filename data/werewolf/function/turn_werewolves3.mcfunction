@@ -17,8 +17,8 @@ effect give @a[team=Werewolf] minecraft:saturation infinite 0 true
 effect give @a[team=Werewolf] minecraft:resistance infinite 0 true
 effect give @a[team=Werewolf] minecraft:night_vision infinite 0 true
 
-# Show hunter outlines
-effect give @a[team=Hunter] minecraft:glowing infinite 0 true
+# Give werewolves a hunter scent tracker
+function werewolf:scent_loop
 
 # Announce change to hunters
 title @a[team=Hunter] times 20 120 20
